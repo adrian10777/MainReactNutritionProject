@@ -16,7 +16,7 @@ const Services = props => {
     const getProgramData = async () => {
         let response = await axios.get('https://sdanutrition.herokuapp.com/api/programs')
         //if you do not control api or u are preparing this for a production environment 
-        // you should build error handling into this api cal
+        // you should build error handling into this api call
         //check if u are getting 200 repsonse code and have backup plan if u dont
         //because we control this api and are still developing this react app, i am keeping this api call simple
         // and ignoring error handling/headers/messages, etc, other stuff u might need in production env
@@ -62,7 +62,7 @@ const Services = props => {
                 'quantity': 1
             }
         }
-        // update the db with a new cart iff there is a user
+        // update the db with a new cart if there is a user
         if (user) {
             set(ref(db, `carts/${user.uid}`), mutatingCart)
         }
@@ -105,11 +105,11 @@ const Services = props => {
                                                             <li id="serviceunderline">_______________________</li>
                                                             <li><span className="fa fa-check-circle" ></span><b>Phase 5:</b> Food Combinations To Enhance Your Nutrient Intake/ Vitamin/Mineral Combinations To Increase Absorption, World's healthiest Foods/ How To Save Money</li>
                                                             <li id="serviceunderline">_______________________</li>
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 6: Gut Microbiome</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b>Phase 6:</b> Gut Microbiome</li>
                                                             <li id="serviceunderline">_______________________</li>
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 7: Sprouting/ Canning/ Freezing/ Meal Planning/ Fasting/ Food Safety/ Does organic matter? / Recipes</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b>Phase 7:</b> Sprouting/ Canning/ Freezing/ Meal Planning/ Fasting/ Food Safety/ Does organic matter? / Recipes</li>
                                                             <li id="serviceunderline">_______________________</li>
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 8: Why being vegan matters/ W A N T E R S (Eight laws of health), Handouts.</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b>Phase 8:</b> Why being vegan matters/ W A N T E R S (Eight laws of health), Handouts.</li>
                                                             <li id="serviceunderline">_______________________</li>
                                                             <li><span className="fa fa-check-circle" ></span>Personalized Meal Plan</li>
                                                             <li id="serviceunderline">_______________________</li>
@@ -136,7 +136,7 @@ const Services = props => {
                                                     </div>
                                                     <div className="card-body pt-0">
                                                         <ul className="list-unstyled mb-4">
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 1: Consultation</li>
+                                                            <li><span className="fa fa-check-circle" ></span>Consultation</li>
                                                             <li id="serviceunderline">___________________</li>
                                                             <li><span className="fa fa-check-circle" ></span>A Certified LEAP Therapist (CLT) is a critical part of the healthcare delivery team. In fact, they are the only team member that can dramatically improve outcomes in a wide range of chronic health problems such as:</li>
                                                             <li id="serviceunderline">___________________</li>
@@ -173,9 +173,9 @@ const Services = props => {
                                                     </div>
                                                     <div className="card-body pt-0">
                                                         <ul className="list-unstyled mb-4">
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 1: Consultation</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b> Phase 1:</b> Consultation</li>
                                                             <li id="serviceunderline">___________________</li>
-                                                            <li><span className="fa fa-check-circle" ></span>How To Lose Weight As A Vegan Program</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b> Phase 2:</b>How To Lose Weight As A Vegan Program</li>
                                                             <li id="serviceunderline">___________________</li>
                                                             <li><span className="fa fa-check-circle" ></span>Personalized Meal Plan</li>
                                                             <li id="serviceunderline">___________________</li>
@@ -242,9 +242,9 @@ const Services = props => {
                                                     </div>
                                                     <div className="card-body pt-0">
                                                         <ul className="list-unstyled mb-4">
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 1: Consultation</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b> Phase 1:</b> Consultation</li>
                                                             <li id="serviceunderline">___________________</li>
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 2: Longevity Program</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b> Phase 2:</b> Longevity Program</li>
                                                             <li id="serviceunderline">___________________</li>
                                                             <li><span className="fa fa-check-circle" ></span>5, 15-30 Minute Follow Ups</li>
                                                             <li id="serviceunderline">___________________</li>
@@ -276,7 +276,7 @@ const Services = props => {
                                                     </div>
                                                     <div className="card-body pt-0">
                                                         <ul className="list-unstyled mb-4">
-                                                            <li><span className="fa fa-check-circle" ></span>Phase 1: Consultation</li>
+                                                            <li><span className="fa fa-check-circle" ></span><b> Phase 1:</b> Consultation</li>
                                                             <li id="serviceunderline">___________________</li>
                                                             <li><span className="fa fa-check-circle" ></span>5, 15-30 Minute Follow Ups</li>
                                                             <li id="serviceunderline">___________________</li>

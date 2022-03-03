@@ -43,12 +43,12 @@ const Navbar_ = props => {
         <Col id="navbar">
             <Link className='nav-link' id="shopbutton" to={props.cart.size ? '/cart' : '/shop'}><i className="fa fa-shopping-cart"></i> | {props.cart.size ? `${props.cart.size} | $${props.cart.total}` : 'Empty'}</Link>
 
-          <Link class="nohover" className="nav-link mynavlinks" to="/">Home</Link>
-          <Link class="nohover" className="nav-link mynavlinks" to="/services">Services</Link>
-          <Link class="nohover" className="nav-link mynavlinks" to="/about">About Me</Link>
-          <Link class="nohover" className="nav-link mynavlinks" to="/blogs">Blogs</Link>
+          <Link className="nav-link mynavlinks" to="/">Home</Link>
+          <Link className="nav-link mynavlinks" to="/services">Services</Link>
+          <Link className="nav-link mynavlinks" to="/about">About Me</Link>
+          <Link className="nav-link mynavlinks" to="/blogs">Blogs</Link>
           {/* <Link className="nav-link mynavlinks" to="/freemealplan">Free Meal Plan</Link> */}
-          <Link class="nohover" className="nav-link mynavlinks" to="/donate">Donate</Link>
+          <Link className="nav-link mynavlinks" to="/donate">Donate</Link>
         </Col>
       </Row>
 
@@ -101,7 +101,7 @@ const Navbar_ = props => {
         <Col>
           <SearchBar placeholder="Search..." />
         </Col>
-        <Col>
+        <Col id='signinoutmiddle'>
           <div id='signinout'>
             {
               signinStatus === 'loading' ?

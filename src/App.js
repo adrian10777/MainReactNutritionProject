@@ -74,7 +74,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Logo />
+      <Logo id="logoapp"/>
       <Navbar cart={cart} />
  
 
